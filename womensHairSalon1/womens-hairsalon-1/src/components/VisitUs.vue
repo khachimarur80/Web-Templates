@@ -18,7 +18,7 @@
       Lun- Vier: 7am - 10pm  \ Sábado: 8am - 10pm  \  Domingo: 8am - 11pm
     </span>
 
-    <span id="location">
+    <span class="location">
       Ver ubicacion
     </span>
   </div>
@@ -78,7 +78,7 @@ export default {
     font-weight: 100 !important;
     text-transform: uppercase;
     user-select: none;
-    margin-top: 160px;
+    margin-top: 60px;
     margin-bottom: 60px;
     cursor: pointer;
     color: #FAB89D;

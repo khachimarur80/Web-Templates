@@ -37,7 +37,7 @@ export default {
       if (!this.animationFrameId) {
         this.animationFrameId = requestAnimationFrame(() => {
           const contentScrollTop = this.$refs.pageContents.scrollTop;
-          this.parallaxContainer.scrollTop = contentScrollTop*.9;
+          this.parallaxContainer.scrollTop = contentScrollTop*.8;
           this.animationFrameId = null;
         });
       }
@@ -69,10 +69,10 @@ export default {
   background-position: 50% 50%;
 }
 .parallax-image:nth-child(1) {
-  height: 550px;
+  height: 700px;
 }
 .parallax-image:nth-child(2) {
-  height: 820px;
+  height: 1200px;
 }
 .parallax-image:nth-child(3) {
   height: 800px;
