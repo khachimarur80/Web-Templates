@@ -23,7 +23,7 @@
         </span>
       </div>
       <div class="product-image">
-        <img height="100%" width="100%" :src="product.image" alt="Fuck you"/>
+        <img style="object-fit: cover;" :src="product.image" alt="Fuck you"/>
       </div>
     </div>
   </div>
