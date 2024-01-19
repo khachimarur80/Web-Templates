@@ -23,7 +23,7 @@
         </span>
       </div>
       <div class="product-image">
-        <img :src="product.image" height="100%" width="100%">
+        <img :src="product.image" style="object-fit: cover; width: 100%; height: 100%;" />
       </div>
     </div>
   </div>
@@ -85,8 +85,5 @@ export default {
   .product-image {
     height: 250px;
     width: 250px;
-  }
-  .product-image {
-    object-fit: contain;
   }
 </style>
