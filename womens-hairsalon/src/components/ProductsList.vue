@@ -22,8 +22,7 @@
           Reservar
         </span>
       </div>
-      <div class="product-image">
-        <img style="object-fit: cover;" :src="product.image" alt="Fuck you"/>
+      <div class="product-image" :style="{'background':'url('+product.image+')'">
       </div>
     </div>
   </div>
@@ -85,5 +84,6 @@ export default {
   .product-image {
     height: 250px;
     width: 250px;
+    background-size: cover;
   }
 </style>
