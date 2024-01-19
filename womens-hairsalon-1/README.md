@@ -1,4 +1,4 @@
-# womens-hairsalon-1
+# womens-hairsalon
 
 ## Project setup
 ```
