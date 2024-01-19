@@ -184,7 +184,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 150px;
+  padding: 80px;
 }
 #visit {
   display: flex;

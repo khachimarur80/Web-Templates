@@ -1,17 +1,26 @@
 <template>
-  <div id="specialsList">
+  <div id="visitUs">
     <div class="line" style="background: white;"></div>
-    <div class="specials-title">
-      Especiales de invierno
+    <div class="visitus-title">
+      Visítanos
     </div>
-    <br>
-    <div class="special" v-for="(special, i) in specials" :key="i">
-      <span> {{ special.name }} </span>
-      <span style="font-size: 20px"> €{{ special.pricing }} </span>
-    </div>
-    <div class="reserve">
-      Reservar Turno
-    </div>
+    <span class="info-piece">
+      Av. Los Rosales 122,  28021, Madrid.
+    </span>
+    <span class="info-piece">
+      info@misitio.com  \  Tel: 914-123-456
+    </span>
+    <br><br>
+    <span class="info-piece" style="text-transform: uppercase;">
+      HORARIO DE TRABAJO
+    </span>
+    <span class="info-piece">
+      Lun- Vier: 7am - 10pm  \ Sábado: 8am - 10pm  \  Domingo: 8am - 11pm
+    </span>
+
+    <span id="location">
+      Ver ubicacion
+    </span>
   </div>
 </template>
 
@@ -27,7 +36,7 @@ export default {
 </script>
 
 <style scoped>
-  #specialsList {
+  #visitUs {
     background: black;
     width: 500px;
     height: fit-content;
@@ -37,31 +46,29 @@ export default {
     flex-direction: column;
     align-items: center;
   }
-  .specials-title {
+  .visitus-title {
     font-size: 70px;
     width: 60%;
     font-family: 'Great Vibes', cursive;
     font-weight: bold;
     line-height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   .line {
     height: 3px;
     width: 30px;
     margin-bottom: 20px;
   }
-  .special {
-    width: 80%;
+  .info-piece {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 30px;
     font-family: 'HelveticaNeue-Thin';
-    font-size: 20px;
-    font-weight: 100 !important;
-    text-transform: uppercase;
+    font-size: 16px;
   }
-  .reserve {
+  .location {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -71,11 +78,12 @@ export default {
     font-weight: 100 !important;
     text-transform: uppercase;
     user-select: none;
-    margin-top: 60px;
+    margin-top: 160px;
     margin-bottom: 60px;
     cursor: pointer;
-  }
-  .reserve:hover {
     color: #FAB89D;
+  }
+  .location:hover {
+    color: #white;
   }
 </style>
