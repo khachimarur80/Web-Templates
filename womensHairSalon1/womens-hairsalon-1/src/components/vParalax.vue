@@ -31,13 +31,14 @@ export default {
   },
   mounted() {
     this.parallaxContainer = this.$refs.parallaxContainer;
+    
   },
   methods: {
     handleContentScroll() {
       if (!this.animationFrameId) {
         this.animationFrameId = requestAnimationFrame(() => {
           const contentScrollTop = this.$refs.pageContents.scrollTop;
-          this.parallaxContainer.scrollTop = contentScrollTop/4;
+          this.parallaxContainer.scrollTop = Math.ceil(contentScrollTop/4);
           this.animationFrameId = null;
         });
       }
