@@ -84,6 +84,6 @@ export default {
   .product-image {
     height: 250px;
     width: 250px;
-    background-size: cover;
+    background-size: contain;
   }
 </style>
