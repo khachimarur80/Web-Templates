@@ -119,6 +119,11 @@ export default {
     color: rgb(39, 39, 39);
     animation: moveText 20s linear infinite;
   }
+  .banner-image {
+    width: 400px;
+    margin-top: -100px;
+    background: url("@/assets/images/perfilHombre.png");
+  }
 
 
 </style>
