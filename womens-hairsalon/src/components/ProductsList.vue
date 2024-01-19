@@ -22,7 +22,7 @@
           Reservar
         </span>
       </div>
-      <div class="product-image" :style="{'background':'url('+product.image+')'">
+      <div class="product-image" :style="{'background':'url('+product.image+')'}">
       </div>
     </div>
   </div>
