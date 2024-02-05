@@ -63,7 +63,4 @@ export default {
   border-radius: 10px;
   border: 1px solid var(--background);
 }
-h1 {
-  color: var(--primary);
-}
 </style>
