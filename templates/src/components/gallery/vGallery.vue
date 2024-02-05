@@ -8,7 +8,6 @@
         <img :src="image.image" height="100%" :alt="'Imagen de '+image.name" style="aspect-ratio: 1; object-fit: cover;"/>
         <div class="gallery-image-info">
           <p class="name">{{ image.name }}</p>
-          <p class="client">{{ image.client }}</p>
           <p class="date">{{ image.date }}</p>
         </div>
       </div>
@@ -85,12 +84,14 @@ export default {
     width: 100h;
     padding-bottom: 50px;
     padding-top: 50px;
+    background: var(--primary);
   }
   .gallery-header {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   .gallery-contents {
     display: flex;
@@ -109,11 +110,11 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     user-select: none;
   }
   .gallery-image-info {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +125,7 @@ export default {
   }
   .date {
     font-size: 14px;
-    color: var(--background);
+    color: var(--text-light);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -139,12 +140,12 @@ export default {
     transform: translate(-50%, calc(-50% + 100px));
     margin: 0px;
     transition: transform .3s ease-out;
-    color: var(--background);
+    color: var(--text-light);
   }
   .client {
     transform: translateY(100px);
     transition: transform .3s ease-out;
-    color: var(--background);
+    color: var(--text-light);
   }
   .gallery-image img {
     transition: filter .2s ease-out, transform .2s ease-out;

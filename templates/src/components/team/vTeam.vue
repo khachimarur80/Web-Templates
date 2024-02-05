@@ -79,11 +79,14 @@ export default {
   #equipo {
     padding: 50px;
     width: 100h;
+    background: url('@/assets/images/fondo6.jpg');
+    background-size: cover;
   }
   .team-header {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   .members {
     width: 90%;
@@ -126,16 +129,17 @@ export default {
     align-items: center;
     margin: 5px;
     overflow: hidden;
-    background: var(--background);
+    background: var(--primary);
     transition: transform .2s ease-out;
+    color: var(--text);
   }
   .member:hover {
     box-shadow: 0px 0px 3px 1px #111;
     transform: scale(1.01);
   }
   .since {
-    margin-top: -20px;
-    font-size: 14px;
+    margin-top: -15px;
+    font-size: 12px;
     color: var(--text-light);
     filter: brightness(.5);
   }
@@ -148,12 +152,12 @@ export default {
     justify-content: center;
   }
   .ocupation {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--text);
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
-    color: var(--primary);
+    color: var(--text);
     font-size: 14px;
     display: flex;
     justify-content: center;

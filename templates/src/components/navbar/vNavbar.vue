@@ -61,7 +61,7 @@ export default {
     align-items: center;
     height: 100%;
     font-size: 30px;
-    color: var(--background);
+    color: var(--text);
   }
   .spacer {
     flex: 1;
@@ -71,11 +71,11 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 10px;
+    gap: 15px;
   }
   .navbar-item {
     cursor: pointer;
     text-decoration: none;
-    color: var(--background);
+    color: var(--text);
   }
 </style>

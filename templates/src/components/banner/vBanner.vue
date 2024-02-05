@@ -47,7 +47,7 @@ export default {
     font-size: 40px;
     font-weight: bold;
     margin-left: 10%;
-    color: var(--background);
+    color: var(--text);
   }
   .text {
     width: 80%;
@@ -56,7 +56,7 @@ export default {
     font-size: 20px;
     margin-left: calc(10% + 30px);
     text-align: end;
-    color: var(--background);
+    color: var(--text);
   }
   .hero-image {
     display: flex;

@@ -54,12 +54,15 @@ export default {
   #testimonios {
     width: 100h;
     padding: 50px;
+    background: url('@/assets/images/fondo4.jpg');
+    background-size: cover;
   }
   .testimonials-header {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   .testimonials {
     display: flex;
@@ -71,9 +74,11 @@ export default {
     width: 33%;
     margin: 20px;
     height: 230px;
-    background: var(--text-light);
+    background: var(--primary);
     position: relative;
     border-radius: 10px;
+    color: var(--text);
+    box-shadow: 0px 0px 4px 1px var(--text);
   }
   .text {
     text-align: justify;

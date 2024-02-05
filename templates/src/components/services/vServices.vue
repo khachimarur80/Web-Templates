@@ -64,9 +64,11 @@ export default {
 
 <style scoped>
   #servicios {
-    padding-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 50px;
     width: 100h;
     height: fit-content;
+    background: var(--background);
   }
   .services-header {
     width: 100%;
@@ -76,10 +78,11 @@ export default {
   }
   .service {
     aspect-ratio: 2/3;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--text);
     width: 330px;
     border-radius: 20px;
-    background: var(--background);
+    background: var(--primary);
+    color: var(--text);
   }
   .service-contents {
     display: flex;
@@ -127,13 +130,13 @@ export default {
     padding-bottom: 8px;
     border-radius: 10px;
     border: none;
-    border: 1px solid var(--primary);
-    background: var(--background);
+    border: 1px solid var(--text);
+    background: transparent;
     cursor: pointer;
+    color: var(--text);
   }
 
   .service-price button:hover {
     background: var(--primary);
-    color: var(--text-light);
   }
 </style>

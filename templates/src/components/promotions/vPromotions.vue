@@ -37,12 +37,17 @@ export default {
 <style scoped>
   #promociones {
     width: 100h;
+    background: url('@/assets/images/fondo5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
   }
   .promotions-header {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   .promotion {
     width: 100%;
@@ -51,6 +56,7 @@ export default {
     align-items: center;
     height: 400px;
     padding-left: 50px;
+    color: var(--text-light);
   }
 
   .promotion-info {
@@ -78,5 +84,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  img {
+    border-radius: 50px;
+    overflow: hidden;
   }
 </style>

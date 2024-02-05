@@ -200,6 +200,7 @@ export default {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   #contacto {
     width: 100h;
@@ -208,6 +209,8 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url('@/assets/images/fondo1.jpg');
+    background-size: cover;
   }
   .contact-form {
     width: 100%;
@@ -262,6 +265,7 @@ export default {
   }
   textarea {
     height: 100px;
+    resize: none;
   }
 
   .error-message {
@@ -282,6 +286,7 @@ export default {
     border: none;
     width: 80px;
     height: 35px;
+    color: var(--text-light);
   }
   #send[disabled] {
     cursor: not-allowed;

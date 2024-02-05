@@ -46,7 +46,7 @@ export default {
 #home {
   height: calc(100vh);
   width: 100h;
-  background: transparent;
+  background: var(--background);
   scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-padding-top: 100px;

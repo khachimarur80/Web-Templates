@@ -13,15 +13,15 @@ export default {
   },
   data: () => ({
     theme: {
-      primary: '#4285F4',
+      primary: '#222',//'#4285F4',
       background_dark: '#202124',
-      background: '#FFFFFF',
+      background: '#555',
       error: '#EA4335',
       success: '#34A853',
       warning: '#FBBC05',
       text_light: '#EEEEEE',
       font_family: 'Verdana',
-      text: '#222',
+      text: '#4285F4',
     },
     navbar: {
       name: 'Lorem',

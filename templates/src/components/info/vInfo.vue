@@ -54,7 +54,7 @@ export default {
   .info-header {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    color: var(--text-light);
   }
   #información {
     display: flex;
@@ -63,6 +63,8 @@ export default {
     padding: 50px;
     width: 100h;
     flex-direction: column;
+    background: url('@/assets/images/fondo2.jpg');
+    background-size: cover;
   }
   .schedule {
     height: fit-content;
@@ -97,7 +99,7 @@ export default {
     background-color: var(--text-light);
   }
   tr:nth-child(odd) {
-    background-color: var(--background);
+    background-color: var(--text);
   }
 
 

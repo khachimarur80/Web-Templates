@@ -47,7 +47,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--background);
+    color: var(--text);
   }
   .socials {
     display: flex;
