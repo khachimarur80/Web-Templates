@@ -1,6 +1,5 @@
 <template>
   <div id="home" @scroll="handleScroll">
-    <vParallax/>
     <vBanner/>
     <vServices/>
     <vTeam/>
@@ -14,7 +13,6 @@
 </template>
 <script>
 
-import vParallax from '@/components/decoration/vParallax'
 import vBanner from '@/components/banner/vBanner'
 import vServices from '@/components/services/vServices'
 import vTeam from '@/components/team/vTeam'
@@ -37,7 +35,6 @@ export default {
     vTestimonials,
     vContact,
     vFooter,
-    vParallax
   },
   data: () => ({
     animationFrameId: false,

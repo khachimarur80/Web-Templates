@@ -146,8 +146,12 @@ export default {
     transition: transform .3s ease-out;
     color: var(--background);
   }
+  .gallery-image img {
+    transition: filter .2s ease-out, transform .2s ease-out;
+  }
   .gallery-image:hover img {
-    filter: brightness(.8) blur(5px);
+    filter: brightness(.8) blur(2px);
+    transform: scale(1.3);
   }
   .gallery-image:hover .gallery-image-info {
     opacity: 1;

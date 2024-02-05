@@ -120,14 +120,18 @@ export default {
   .member {
     display: inline-flex;
     min-width: 250px;
+    max-width: 250px;
     height: 440px;
     flex-direction: column;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
     overflow: hidden;
     background: var(--background);
-    border-radius: 10px;
+    transition: transform .2s ease-out;
+  }
+  .member:hover {
+    box-shadow: 0px 0px 3px 1px #111;
+    transform: scale(1.01);
   }
   .since {
     margin-top: -20px;
