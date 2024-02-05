@@ -75,6 +75,7 @@ export default {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: var(--text-light);
   }
   .service {
     aspect-ratio: 2/3;

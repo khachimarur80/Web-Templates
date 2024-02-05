@@ -13,7 +13,7 @@ export default {
   },
   data: () => ({
     theme: {
-      primary: '#222',//'#4285F4',
+      primary: '#0A3143',//'#4285F4',
       background_dark: '#202124',
       background: '#555',
       error: '#EA4335',
@@ -21,7 +21,7 @@ export default {
       warning: '#FBBC05',
       text_light: '#EEEEEE',
       font_family: 'Verdana',
-      text: '#75a9ff',
+      text: '#CECFC9',
     },
     navbar: {
       name: 'Lorem',
