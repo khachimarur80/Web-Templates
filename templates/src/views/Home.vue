@@ -54,6 +54,7 @@ export default {
   overflow-y: scroll;
   scroll-padding-top: 100px;
   scroll-margin-top: 100px;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 10px;
