@@ -21,7 +21,7 @@ export default {
       warning: '#FBBC05',
       text_light: '#EEEEEE',
       font_family: 'Verdana',
-      text: '#4285F4',
+      text: '#75a9ff',
     },
     navbar: {
       name: 'Lorem',
