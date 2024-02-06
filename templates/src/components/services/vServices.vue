@@ -68,7 +68,9 @@ export default {
     padding-bottom: 50px;
     width: 100h;
     height: fit-content;
-    background: var(--background);
+    background: url('@/assets/images/fondo7.jpg');
+    background-size: cover;
+    background-position: center;
   }
   .services-header {
     width: 100%;

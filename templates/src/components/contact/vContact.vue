@@ -4,7 +4,7 @@
       Contacto
     </h1>
     <div class="contact-contents">
-      <form class="contact-form" id="contact-form" @submit="submitForm" ref="contactForm">
+      <form class="contact-form" id="contact-form" @submit="submitForm(event)" ref="contactForm">
         <div class="form-row">
           <div class="name">
             <div class="name-contents">
@@ -218,8 +218,8 @@ export default {
   .contact-contents {
     width: 700px;
     padding: 30px;
-    background: linear-gradient(to bottom right, #fff 0%, var(--primary) 100%);
-    border-radius: 30px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 20px;
   }
   .name {
     display: flex;

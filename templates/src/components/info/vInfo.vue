@@ -69,16 +69,16 @@ export default {
   .schedule {
     height: fit-content;
     width: fit-content;
-    padding: 30px;
     border: 1px solid var(--primary);
     border-radius: 30px;
     background-color: var(--text-light);
+    overflow: hidden;
+    margin-top: 20px;
   }
 
   table {
-    width: 400px;
+    width: 600px;
     border-collapse: collapse;
-    margin-top: 20px;
     background-color: var(--text-light);
   }
 
