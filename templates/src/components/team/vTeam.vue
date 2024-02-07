@@ -169,4 +169,23 @@ export default {
     aspect-ratio: 1;
     background-size: cover;
   }
+
+  @media only screen and (max-width: 767px) {
+    .members {
+      width: 100%;
+      padding: 0px;
+    }
+    .members-contents {
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin: 0px;
+    }
+    .member {
+      width: 200px;
+    }
+    .members button {
+      display: none;
+    }
+  }
 </style>

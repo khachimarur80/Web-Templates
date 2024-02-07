@@ -102,5 +102,12 @@ export default {
     background-color: var(--text);
   }
 
-
+  @media only screen and (max-width: 767px) {
+    #información {
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+    }
+  }
 </style>

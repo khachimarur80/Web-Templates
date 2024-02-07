@@ -89,4 +89,27 @@ export default {
     border-radius: 50px;
     overflow: hidden;
   }
+
+  @media only screen and (max-width: 767px) {
+    .promotion {
+      flex-direction: column;
+      padding: 0px;
+      height: 600px;
+    }
+    .promotion-info {
+      height: fit-content;
+      width: 100%;
+    }
+    .promotion-image {
+      width: 100%;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
 </style>

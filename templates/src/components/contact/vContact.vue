@@ -311,4 +311,19 @@ export default {
   @keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
+
+  @media only screen and (max-width: 767px) {
+    .contact-contents {
+      width: calc(100%);
+      padding: 10px;
+      padding-left: 0px;
+    }
+    .form-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    textarea, input {
+      width: 100%;
+    }
+  }
 </style>

@@ -67,4 +67,29 @@ export default {
     overflow: hidden;
     border-top-left-radius: 40px;
   }
+  @media only screen and (max-width: 767px) {
+    #banner {
+      flex-direction: column-reverse;
+      margin-top: 155px;
+      height: calc(100% - 155px);
+    }
+    .hero-image {
+      height: 40%;
+      border-radius: 0px;
+      width: 100%;
+    }
+    .slogan {
+      width: 100%;
+      height: 60%;
+    }
+    .title {
+      font-size: 30px;
+      margin: 0px;
+    }
+    .text {
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+    }
+  }
 </style>

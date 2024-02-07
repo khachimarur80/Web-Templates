@@ -103,4 +103,20 @@ export default {
     width: calc(100% - 15px);
     text-align: end;
   }
+
+  @media only screen and (max-width: 767px) {
+    .testimonials {
+      flex-direction: column;
+      padding: 0px;
+    }
+    .text {
+      height: fit-content;
+      text-align: center;
+    }
+    .testimony {
+      width: 100%;
+      height: fit-content;
+      padding-bottom: 10px;
+    }
+  }
 </style>

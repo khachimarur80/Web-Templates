@@ -78,4 +78,14 @@ export default {
     text-decoration: none;
     color: var(--text);
   }
+  @media only screen and (max-width: 767px) {
+    #navbar {
+      flex-direction: column;
+      height: 155px;
+    }
+    .navbar-items {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
 </style>
