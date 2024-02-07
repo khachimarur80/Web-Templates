@@ -68,6 +68,7 @@ export default {
     padding-bottom: 50px;
     width: 100h;
     height: fit-content;
+    /*background: #D2C794;*/
     background: url('@/assets/images/fondo7.jpg');
     background-size: cover;
     background-position: center;
@@ -77,7 +78,7 @@ export default {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: var(--text-light);
+    color: #000;
   }
   .service {
     aspect-ratio: 2/3;
