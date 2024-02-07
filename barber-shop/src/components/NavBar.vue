@@ -51,7 +51,7 @@ export default {
     display: flex;
     padding: 20px;
     transition: top 0.3s ease, opacity 0.3s ease;
-    width: 100h;
+    width: calc(100% - 20px);
   }
   .navbar-icon {
     height: 100px;
