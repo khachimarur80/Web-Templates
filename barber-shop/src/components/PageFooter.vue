@@ -8,7 +8,7 @@
       </span>
     </span>
     <span class="footer-text">
-      ©2024 The Barber's Shop - Sitio Web creado por KA
+      ©2024 La Rodola Barbershop - Sitio Web creado por Aurie
     </span>
   </div>
 </template>
@@ -54,5 +54,11 @@ export default {
     height: 20px;
     width: 20px;
     border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .footer-text {
+      text-align: center;
+    }
   }
 </style>

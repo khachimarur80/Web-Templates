@@ -51,12 +51,13 @@ export default {
     display: flex;
     padding: 20px;
     transition: top 0.3s ease, opacity 0.3s ease;
-    width: 100%;
+    width: 100h;
   }
   .navbar-icon {
     height: 100px;
     width: 100px;
-    border: 1px solid white;
+    background: url('@/assets/logo.png');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,5 +116,27 @@ export default {
   }
   .show .navbar-item:after {
     background: white;
+  }
+
+  @media only screen and (max-width: 767px) {
+    #navbar {
+      flex-direction: column;
+      align-items: center;
+      background: #121212;
+      padding-bottom: 5px;
+    }
+    .navbar-icon {
+      height: 80px;
+      width: 80px;
+    }
+    .navbar-contents {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+    .navbar-item {
+      font-size: 15px;
+    }
   }
 </style>

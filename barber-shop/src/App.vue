@@ -40,21 +40,21 @@ export default {
     slides: [
       {
         image: require('@/assets/images/image1.jpeg'),
-        slogan: "Eslogan de ejemplo",
+        slogan: "La Rodola",
         text: "Escribe aqui tu pequeño texto como slogan, con la información que creas necesaria. No debe ser ni muy larga, ni muy corta. Así está bien.",
-        letter: "BSA",
+        letter: "LR",
       },
       {
         image: require('@/assets/images/image2.webp'),
-        slogan: "Eslogan de ejemplo",
+        slogan: "Mejores cortes de pelo",
         text: "Escribe aqui tu pequeño texto como slogan, con la información que creas necesaria. No debe ser ni muy larga, ni muy corta. Así está bien.",
-        letter: "ES",
+        letter: "MCP",
       },
       {
         image: require('@/assets/images/image3.jpeg'),
-        slogan: "Eslogan de ejemplo",
+        slogan: "Eleva tu estilo",
         text: "Escribe aqui tu pequeño texto como slogan, con la información que creas necesaria. No debe ser ni muy larga, ni muy corta. Así está bien.",
-        letter: "T",
+        letter: "E",
       }
     ],
     services: [

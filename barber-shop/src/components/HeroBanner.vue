@@ -16,10 +16,10 @@
     </div>
     <div class="text-animation-container">
       <div class="text-animation">
-        &nbsp;THE BARBER'S SHOP&nbsp;
+        &nbsp;LA RODOLA BARBERSHOP&nbsp;
       </div>
       <div class="text-animation">
-        &nbsp;THE BARBER'S SHOP&nbsp;
+        &nbsp;LA RODOLA BARBERSHOP&nbsp;
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
 export default {
   name: 'NavBar',
   data: ()=>({
-    slogan: "Bienvenido a the barber's shop",
+    slogan: "Bienvenido a La Rodola",
     text: "Un espacio dedicado exclusivamente al hombre, donde el espectáculo y el arte se combinan para tener una experiencia inolvidable.",
   }),
   mounted() {
@@ -61,7 +61,8 @@ export default {
   .banner-icon {
     height: 300px;
     width: 300px;
-    border: 1px solid white;
+    background: url("@/assets/logo.png");
+    background-size: cover;
   }
   .banner-slogan {
     font-family: "HelveticaNeue";
@@ -123,6 +124,21 @@ export default {
     width: 400px;
     margin-top: -100px;
     background: url("@/assets/images/perfilHombre.png");
+  }
+
+  @media only screen and (max-width: 767px) {
+    .banner-image {
+      display: none;
+    }
+    .banner-inner, .banner-contents, .banner-text {
+      width: 100%;
+      margin: 0px;
+    }
+    .text-animation-container {
+      margin-top: 20px;
+      margin-bottom: -20px;
+      height: 200px;
+    }
   }
 
 

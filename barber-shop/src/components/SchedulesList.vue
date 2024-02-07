@@ -72,6 +72,7 @@ export default {
     width: 80px;
     border: 1px solid yellow;
     z-index: 1;
+    display: none;
   }
   .section-title {
     color: white;
@@ -94,5 +95,23 @@ export default {
     width: 100%;
     height: 1px;
     background: #aaa;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .section-title {
+      font-size: 30px;
+    }
+    .schedule {
+      width: 300px;
+      padding: 0px;
+    }
+    #scheduleslist {
+      width: 100%;
+    }
+    .schedule-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
   }
 </style>

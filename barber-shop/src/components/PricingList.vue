@@ -69,6 +69,7 @@ export default {
     width: 80px;
     border: 1px solid yellow;
     z-index: 1;
+    display: none;
   }
   .section-title {
     color: white;
@@ -128,5 +129,20 @@ export default {
     font-family: "HelveticaNeue";
     font-size: 16px;
     color: rgb(98, 95, 95);
+  }
+  @media only screen and (max-width: 767px) {
+    .section-title {
+      font-size: 30px;
+    }
+    .section-text {
+      width: 100%;
+    }
+    .price {
+      width: 100%;
+    }
+    .prices {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 </style>

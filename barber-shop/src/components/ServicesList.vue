@@ -73,4 +73,10 @@ export default {
     filter: brightness(.2);
     cursor: pointer;
   }
+
+    @media only screen and (max-width: 767px) {
+      #servicesList {
+        flex-direction: column;
+      }
+    }
 </style>

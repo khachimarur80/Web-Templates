@@ -13,9 +13,6 @@
       <span class="slide-slogan">
         {{ slide.slogan }}
       </span>
-      <span class="slogan-text">
-        {{ slide.text }}
-      </span>
     </div>
   </div>
 </template>
@@ -86,9 +83,16 @@ export default {
     top: 0px;
     left: 0px;
     z-index: 0;
+    opacity: 0;
+    background: #121212;
   }
   .slide.active {
     z-index: 1;
+    opacity: 1;
+  }
+
+  .active .slide-slogan, .active .slide-letter {
+    display: block;
   }
 
   @keyframes sloganIn {
@@ -98,11 +102,11 @@ export default {
     }
     20% {
       opacity: 1;
-      transform: translate(-50%);
+      transform: translateX(-50%);
     }
     100% {
       opacity: 1;
-      transform: translate(-50%);
+      transform: translateX(-50%);
     }
   }
 
@@ -115,14 +119,13 @@ export default {
     opacity: 0;
     z-index: 2;
     position: absolute;
+    display: none;
     top: 25%;
     left: 50%;
     transform: translate(-100%, -50%);
     animation-name: sloganIn;
-    animation-fill-mode: forwards;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-delay: .5s;
   }
   .slide-text {
     font-family: "Helvetica";
@@ -136,11 +139,11 @@ export default {
 
   @keyframes bigLetterIn {
     0% {
-      opacity: .2;
+      opacity: 0;
       transform: translate(-0%, -0%) rotate(-90deg);
     }
     20% {
-      opacity: .2;
+      opacity: .1;
       transform: translate(-50%, -50%) rotate(0deg);
     }
     100% {
@@ -152,20 +155,28 @@ export default {
   .slide-letter {
     font-family: "Helvetica";
     font-size: 70vh;
-    color: gray;
+    color: #ddd;
     opacity: 0;
     z-index: 2;
     position: absolute;
     top: 50%;
+    display: none;
     left: 50%;
     transform: translate(-0%, -0%) rotate(-90deg);
     font-weight: bold;
     animation-name: bigLetterIn;
-    animation-fill-mode: forwards;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-delay: .5s;
   }
 
-
+  @media only screen and (max-width: 767px) {
+    .slide-letter {
+      font-size: 150px;
+    }
+    .slide-slogan {
+      top: 40%;
+      width: 100%;
+      font-size: 40px;
+    }
+  }
 </style>
