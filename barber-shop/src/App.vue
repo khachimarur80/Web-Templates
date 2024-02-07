@@ -3,6 +3,7 @@
     <NavBar :show="show"/>
     <FullCarousel :slides="slides"/>
     <ServicesList :services="services"/>
+    <vGallery/>
     <HeroBanner/>
     <SchedulesList/>
     <PricingList :products="products"/>
@@ -20,6 +21,8 @@ import SchedulesList from '@/components/SchedulesList.vue'
 import PricingList from '@/components/PricingList.vue'
 import PageFooter from '@/components/PageFooter.vue'
 import GoToTop from '@/components/GoToTop.vue'
+import vGallery from '@/components/vGallery.vue'
+
 
 //import BookService --> For later
 
@@ -34,7 +37,8 @@ export default {
     SchedulesList,
     PricingList,
     PageFooter,
-    GoToTop
+    GoToTop,
+    vGallery
   },
   data: ()=>({
     slides: [
